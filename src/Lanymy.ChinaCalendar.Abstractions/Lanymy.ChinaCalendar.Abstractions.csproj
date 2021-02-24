@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../../Build/MsBuildFiles/Lanymy.ChinaCalendar.Header.props" />
+
+
+  <PropertyGroup>
+
+
+  </PropertyGroup>
+
+
+  <Import Project="../../Build/MsBuildFiles/Lanymy.ChinaCalendar.Footer.props" />
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lanymy.ChinaCalendar.DbModels\Lanymy.ChinaCalendar.DbModels.csproj" />
+  </ItemGroup>
+
+
+  
+
+</Project>

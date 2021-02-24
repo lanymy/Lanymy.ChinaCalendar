@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../../Build/MsBuildFiles/Lanymy.ChinaCalendar.Header.props" />
+
+
+  <PropertyGroup>
+
+
+  </PropertyGroup>
+
+
+  <Import Project="../../Build/MsBuildFiles/Lanymy.ChinaCalendar.Footer.props" />
+
+  <ItemGroup>
+
+    <PackageReference Include="Lanymy.Common.All" Version="0.5.3" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.1" />
+  </ItemGroup>
+
+ 
+
+</Project>

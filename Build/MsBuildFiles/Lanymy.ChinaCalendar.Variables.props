@@ -1,0 +1,19 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+  <!--所有变量-->
+
+  <PropertyGroup>
+
+    <CurrentTargetFrameworks>net5.0</CurrentTargetFrameworks>
+
+    <CurrentFileRevision>$([System.DateTime]::Now.ToString("yyyy.MM.dd.HHmm"))</CurrentFileRevision>
+    <CurrentBuildProjectName>$(MSBuildProjectName)</CurrentBuildProjectName>
+    <CurrentRootNamespace>$(CurrentBuildProjectName)</CurrentRootNamespace>
+    <CurrentReleaseNumbers>0.0.1</CurrentReleaseNumbers>
+
+    <LanymyChinaCalendarFrameworkPackageReleaseNumbers>0.0.1</LanymyChinaCalendarFrameworkPackageReleaseNumbers>
+
+  </PropertyGroup>
+
+
+</Project>

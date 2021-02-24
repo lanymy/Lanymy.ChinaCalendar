@@ -1,0 +1,25 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+
+  <PropertyGroup>
+
+    <LanymyChinaCalendarFrameworkPackageReleaseNumbers>0.1.0</LanymyChinaCalendarFrameworkPackageReleaseNumbers>
+
+    <CurrentReleaseNumbers>$(LanymyChinaCalendarFrameworkPackageReleaseNumbers)</CurrentReleaseNumbers>
+
+  </PropertyGroup>
+
+
+  <PropertyGroup>
+
+    <Description>
+      $(CurrentBuildProjectName)
+      老黄历
+    </Description>
+
+    <PackageTags>chinese;china;calendar;</PackageTags>
+
+  </PropertyGroup>
+
+
+</Project>

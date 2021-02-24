@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="../../Build/MsBuildFiles/Lanymy.ChinaCalendar.Header.props" />
+
+
+  <PropertyGroup>
+
+
+  </PropertyGroup>
+
+
+  <Import Project="../../Build/MsBuildFiles/Lanymy.ChinaCalendar.Footer.props" />
+
+
+  <ItemGroup>
+    <None Remove="Resources\db" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\db" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lanymy.ChinaCalendar.Abstractions\Lanymy.ChinaCalendar.Abstractions.csproj" />
+  </ItemGroup>
+
+
+
+
+</Project>

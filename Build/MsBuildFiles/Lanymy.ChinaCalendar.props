@@ -1,0 +1,16 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+ 
+  <Import Project="Lanymy.ChinaCalendar.Variables.props" />
+
+  <PropertyGroup>
+
+    <CurrentTargetFrameworks>net5.0</CurrentTargetFrameworks>
+
+  </PropertyGroup>
+
+
+  
+
+
+</Project>
