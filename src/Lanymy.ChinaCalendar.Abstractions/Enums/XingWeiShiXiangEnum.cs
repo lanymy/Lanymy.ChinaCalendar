@@ -7,13 +7,15 @@
 //namespace Lanymy.ChinaCalendar.Abstractions.Enums
 //{
 
-//    ///// <summary>
-//    ///// 月名
-//    ///// </summary>
-//    //public enum YueMingTypeEnum
-//    //{
 
-//    //}
+//    /// <summary>
+//    /// 行为事项
+//    /// </summary>
+//    public enum XingWeiShiXiangEnum
+//    {
 
+
+
+//    }
 
 //}

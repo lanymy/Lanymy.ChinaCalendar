@@ -5,7 +5,10 @@ using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lanymy.ChinaCalendar.Abstractions;
 using Lanymy.ChinaCalendar.DbModels;
+using Lanymy.Common.ExtensionFunctions;
+using Lanymy.Common.Helpers;
 using Microsoft.EntityFrameworkCore;
 
 namespace Lanymy.ChinaCalendar
@@ -17,6 +20,7 @@ namespace Lanymy.ChinaCalendar
 
         private readonly ChinaCalendarDbContext _CurrentChinaCalendarDbContext;
         private readonly DbConnection _CurrentChinaCalendarDbContextDbConnection;
+        private DateTime _CurrentDateTime = DateTime.Now.Date;
 
 
         public LanymyChinaCalendar()
@@ -35,24 +39,28 @@ namespace Lanymy.ChinaCalendar
             }
         }
 
-        public string GetToday()
+
+        public ChineseDateTimeModel GetToday()
         {
-            return string.Empty;
+            return GoTo(DateTime.Now);
         }
 
-        public string PreDay()
+        public ChineseDateTimeModel PreDay()
         {
-            return string.Empty;
+            return GoTo(_CurrentDateTime.AddDays(-1));
         }
 
-        public string NextDay()
+        public ChineseDateTimeModel NextDay()
         {
-            return string.Empty;
+            return GoTo(_CurrentDateTime.AddDays(1));
         }
 
-        public string GoTo()
+        public ChineseDateTimeModel GoTo(DateTime dt)
         {
-            return string.Empty;
+            _CurrentDateTime = dt.Date;
+            CheckDbConnection();
+            var dtTemp = _CurrentChinaCalendarDbContext.ChineseDateTimes.Where(o => o.DateTimeID == _CurrentDateTime).FirstOrDefault();
+            return dtTemp.IfIsNullOrEmpty() ? new ChineseDateTimeModel { DateTimeID = _CurrentDateTime } : dtTemp.DeepClone<ChineseDateTimeDbModel, ChineseDateTimeModel>();
         }
 
         public void Dispose()
