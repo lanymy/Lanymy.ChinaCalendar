@@ -21,6 +21,12 @@
 
     <PackageId>$(CurrentBuildProjectName)</PackageId>
 
+    <PackageProjectUrl>https://github.com/lanymy/Lanymy.ChinaCalendar</PackageProjectUrl>
+
+    <RepositoryUrl>https://github.com/lanymy/Lanymy.ChinaCalendar</RepositoryUrl>
+
+    <RepositoryType>git</RepositoryType>
+
     <Authors>Lanymy</Authors>
 
     <Company>Copyright © Lanymy 2021</Company>

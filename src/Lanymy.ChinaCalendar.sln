@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanymy.ChinaCalendar", "Lanymy.ChinaCalendar\Lanymy.ChinaCalendar.csproj", "{DF141DE9-2544-4793-9712-33533FBFC342}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lanymy.ChinaCalendar.Abstractions", "Lanymy.ChinaCalendar.Abstractions\Lanymy.ChinaCalendar.Abstractions.csproj", "{F41AF5B4-DD41-4BFE-97A7-8910E14332C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanymy.ChinaCalendar.Abstractions", "Lanymy.ChinaCalendar.Abstractions\Lanymy.ChinaCalendar.Abstractions.csproj", "{F41AF5B4-DD41-4BFE-97A7-8910E14332C4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{8993AF3D-87C6-4A4B-BEA3-D8D8E29D98C4}"
 EndProject
@@ -15,15 +15,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MsBuildFiles", "MsBuildFile
 		..\Build\MsBuildFiles\Lanymy.ChinaCalendar.Header.props = ..\Build\MsBuildFiles\Lanymy.ChinaCalendar.Header.props
 		..\Build\MsBuildFiles\Lanymy.ChinaCalendar.Package.Footer.props = ..\Build\MsBuildFiles\Lanymy.ChinaCalendar.Package.Footer.props
 		..\Build\MsBuildFiles\Lanymy.ChinaCalendar.Package.Header.props = ..\Build\MsBuildFiles\Lanymy.ChinaCalendar.Package.Header.props
-		..\Build\MsBuildFiles\Lanymy.ChinaCalendar.Package.props = ..\Build\MsBuildFiles\Lanymy.ChinaCalendar.Package.props
 		..\Build\MsBuildFiles\Lanymy.ChinaCalendar.props = ..\Build\MsBuildFiles\Lanymy.ChinaCalendar.props
 		..\Build\MsBuildFiles\Lanymy.ChinaCalendar.targets = ..\Build\MsBuildFiles\Lanymy.ChinaCalendar.targets
 		..\Build\MsBuildFiles\Lanymy.ChinaCalendar.Variables.props = ..\Build\MsBuildFiles\Lanymy.ChinaCalendar.Variables.props
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lanymy.ChinaCalendar.DbModels", "Lanymy.ChinaCalendar.DbModels\Lanymy.ChinaCalendar.DbModels.csproj", "{116BAB21-FDDA-4EEF-BDC6-8966DE1C2F49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanymy.ChinaCalendar.DbModels", "Lanymy.ChinaCalendar.DbModels\Lanymy.ChinaCalendar.DbModels.csproj", "{116BAB21-FDDA-4EEF-BDC6-8966DE1C2F49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lanymy.ChinaCalendarTests", "Lanymy.ChinaCalendarTests\Lanymy.ChinaCalendarTests.csproj", "{EE688F9A-247B-4A17-8F46-792BE57FA3F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lanymy.ChinaCalendarTests", "Lanymy.ChinaCalendarTests\Lanymy.ChinaCalendarTests.csproj", "{EE688F9A-247B-4A17-8F46-792BE57FA3F3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
